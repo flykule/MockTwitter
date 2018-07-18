@@ -5,6 +5,53 @@ nav form#search{
     padding: 0.5rem;
 }
 
+.navbar-light{
+    background-color: #2F92CA;
+}
+
+.navbar-light .navbar-nav >li >a,
+.navbar-light .navbar-nav >li >a:hover{
+    color: #FFF !important;
+    -webkit-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.navbar-light .navbar-nav >.active >a{
+    background-color: transparent !important;
+    color: #FFF !important;
+    padding-bottom: 0.62em;
+    border-bottom: 0.45em solid #ffffff;
+}
+
+.navbar-light .navbar-nav >.active >a:hover,
+.navbar-light .navbar-nav >li >a:hover{
+    background-color: transparent !important;
+    color: #F3F3F3 !important;
+    padding-bottom: 0.62em;
+    border-bottom: 0.45em solid #F3F3F3;
+}
+
+/*.navbar-nav .badge{*/
+    /*!*padding: 0.27rem 0.55rem 0.2rem 0.4rem;*!*/
+    /*position: absolute;*/
+    /*left: 12.37rem;*/
+    /*top: 0.7rem;*/
+    /*z-index: 99;*/
+    /*border: 0.2rem solid #2F92CA;*/
+/*}*/
+.navbar-nav .badge-notify{
+    color: #2F92CA;
+    font-size: 0.3em;
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+    background-color: #ffffff;
+    z-index: 99;
+    border: 0.2rem solid #2F92CA;
+    position:relative;
+    top: -16px;
+    left: 20px;
+}
+
 nav form#search .input-group .form-control{
     border-radius: 0.25rem;
 }
@@ -34,17 +81,18 @@ nav form#search .input-group .form-control{
     max-height: 2.3em;
     border-radius: 0.3em;
 }
-/* style icon */
-.inner-addon .glyphicon {
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-}
 
-/* align icon */
-.left-addon .glyphicon  { left:  0px;}
-.right-addon .glyphicon { right: 0px;}
+/*!* style icon *!*/
+/*.inner-addon .glyphicon {*/
+    /*position: absolute;*/
+    /*padding: 10px;*/
+    /*pointer-events: none;*/
+/*}*/
 
-/* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
+/*!* align icon *!*/
+/*.left-addon .glyphicon  { left:  0px;}*/
+/*.right-addon .glyphicon { right: 0px;}*/
+
+/*!* add padding  *!*/
+/*.left-addon input  { padding-left:  30px; }*/
+/*.right-addon input { padding-right: 30px; }*/
