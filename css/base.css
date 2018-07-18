@@ -1,11 +1,35 @@
 .navbar-brand img{
     height: 100%;
 }
+nav form#search{
+    padding: 0.5rem;
+}
+
+nav form#search .input-group .form-control{
+    border-radius: 0.25rem;
+}
 /* enable absolute positioning */
 .inner-addon {
     position: relative;
 }
 
+#nav-options #headDropDown::after{
+    display: none !important;
+}
+
+#nav-options{
+    margin: 0.5rem;
+}
+
+#nav-options button.img-thumbnail{
+    margin: 0;
+    padding: 0;
+}
+
+#nav-options img{
+    max-height: 2.3em;
+    border-radius: 0.3em;
+}
 /* style icon */
 .inner-addon .glyphicon {
     position: absolute;
