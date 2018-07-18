@@ -17,6 +17,10 @@ nav form#search .input-group .form-control{
     display: none !important;
 }
 
+#tweet{
+    margin: 0.5rem;
+}
+
 #nav-options{
     margin: 0.5rem;
 }
