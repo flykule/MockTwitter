@@ -52,6 +52,19 @@ nav form#search{
     left: 20px;
 }
 
+.navbar .navbar-toggler,
+.navbar-light .navbar-toggler:focus{
+    background-color: #57A5D2 !important;
+}
+
+.navbar-light .navbar-toggler:hover{
+    background-color: #3986B3 !important;
+}
+
+.navbar-light .navbar-toggler .navbar-toggler-icon{
+    background-color: #FFF !important;
+}
+
 nav form#search .input-group .form-control{
     border-radius: 0.25rem;
 }
