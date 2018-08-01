@@ -175,6 +175,15 @@
         </div>
 
         <div id="main" class="col-sm-12 col-md-6">
+
+            <nav aria-label="breadcrumb" id="breadCrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Profile</a></li>
+                    <li class="active breadcrumb-item">Feed</li>
+                </ol>
+            </nav>
+
             <div id="main-card" class="card">
                 <form id="new-message">
                     <div class="input-group">
@@ -201,7 +210,7 @@
                                 <i class="fa fa-share" aria-hidden="true"></i>
                             </a>
                             <a href="#">
-                                <i class="fa fa-refresh" aria-hidden="true"></i>
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
                                 <span class="retweet-count">6</span>
                             </a>
                             <a href="#">
@@ -209,7 +218,75 @@
                             </a>
                         </div>
                     </li>
+                    <li>
+                        <img src="imgs/laika.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Laika
+                                <small>@spacesog - 4h</small>
+                            </h5>
+                            <p>That's one small step for a dog, one giant leap for giant</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">4</span>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
+            </div>
+            <nav class="text-center mt-4">
+                <ul class="pagination pagination-lg justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span> </a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1
+                        <span class="sr-only">(current)</span>
+                    </a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="right-content" class="col-md-3 d-none d-md-block">
+            <div id="who-follow" class="card">
+                <div class="card-header">
+                    Who to follow
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="imgs/cat.jpg" class="rounded-circle" alt="">
+                            <div class="table-info">
+                                <strong>Crazy cats</strong>
+                                <button class="btn btn-light">
+                                    <i class="fa fa-plus" aria-hidden="true"> </i>
+                                    Follow
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="imgs/ration.jpg" class="rounded-circle" alt="">
+                            <div class="table-info">
+                                <strong>Free ration alert</strong>
+                                <button class="btn btn-light">
+                                    <i class="fa fa-plus" aria-hidden="true"> </i>
+                                    Follow
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
