@@ -40,6 +40,10 @@ nav form#search{
     /*z-index: 99;*/
     /*border: 0.2rem solid #2F92CA;*/
 /*}*/
+#mainRow{
+    margin-top: 0.5rem;
+}
+
 .navbar-nav .badge-notify{
     color: #2F92CA;
     font-size: 0.3em;
@@ -60,6 +64,86 @@ nav form#search{
 .navbar-light .navbar-toggler:hover{
     background-color: #3986B3 !important;
 }
+
+.card-body img.card-img {
+    top: 50%;
+    margin-top: -52px;
+    width:72px;
+    border:3px solid #ffffff;
+    position: relative;
+    border-radius: 0.4rem;
+    float: left;
+    z-index: 99;
+}
+
+.card-body .card-title{
+    float: left;
+    margin: -1rem 0 0 0.5rem;
+}
+
+.card-body .card-title small{
+    display: block;
+}
+
+.card-body .card-text{
+    clear:both;
+    padding-top: 0.25rem;
+    margin-bottom: 1.5em;
+}
+
+#profile-photo {
+    margin-top: 2rem;
+}
+#profile-photo a {
+    margin: 0;
+}
+
+#profile-resume .card-body .row {
+    margin-left: -1.6rem;
+}
+
+.card-body ul a:hover{
+    text-decoration: none;
+}
+
+form#new-message{
+    border-radius: 0.4rem 0.4rem 0 0;
+    padding: 1em;
+    border-bottom: 0.1em solid #CEE4F5;
+    background-color: #EBF4FB;
+}
+
+form#new-message .input-group-text{
+    background-color: #ffffff;
+}
+
+ul#feed{
+    margin: 0;
+}
+
+ul#feed li{
+    padding: 1em 1em;
+}
+
+ul#feed .feed-avatar{
+    width: 13%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-stats{
+    color: #777;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.63em;
+}
+
+.profile-value{
+    color: #2F92CA;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 
 .navbar-light .navbar-toggler .navbar-toggler-icon{
     background-color: #FFF !important;
