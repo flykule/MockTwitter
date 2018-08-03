@@ -208,10 +208,22 @@ div#who-follow li .table-info{
     background-color: #ffffff;
 }
 
+.alert{
+    border-left-width: 0.5rem;
+}
+.alert h3{
+    margin: 0 0 1rem;
+    font-size: 1.4em;
+}
+
 div#who-follow li .table-info strong{
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+div#app-info{
+    margin-top: 2rem;
 }
 
 div#who-follow .table-info .fa{
