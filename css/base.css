@@ -177,6 +177,12 @@ ul#feed .feed-avatar {
     border-radius: 0.4rem 0.4rem 0 0;
 }
 
+body{
+    background-color: #f5f5f5!important;
+}
+.card{
+    margin-top: 0.5rem;
+}
 #profile-settings .flex-column li:last-child a {
     border-radius: 0 0 0.4rem 0.4rem;
 }
@@ -316,6 +322,14 @@ nav form#search .input-group .form-control {
 #main .tab-content{
     padding: 2em;
     margin-top: -0.1rem;
+    background-color: #FFFFFF!important;
+}
+.list-group-item{
+    border-color: #e5e5e5;
+}
+
+#account-tabs > li{
+    border-bottom: 0;
 }
 
 #account-tabs{
