@@ -332,6 +332,16 @@ nav form#search .input-group .form-control {
     border-bottom: 0;
 }
 
+#right-content .list-group .badge{
+    float: right;
+    padding: 0.3rem 0.6rem;
+}
+
+#right-content .list-group .fa-star{
+    background-color: #f0ad4e;
+    padding: 0.4rem 0.4rem 0.4rem 0.5rem;
+}
+
 #account-tabs{
     position: relative;
     z-index: 99;
