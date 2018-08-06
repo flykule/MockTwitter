@@ -146,6 +146,50 @@ ul#feed .feed-avatar {
     font-size: 1.2em;
 }
 
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes w70 {
+    from {
+        width: 0
+    }
+    to {
+        width: 70%
+    }
+}
+
+#profile-settings .flex-column li {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+}
+
+#profile-settings .flex-column a {
+    border-radius: 0;
+}
+
+#profile-settings .flex-column li:first-child a {
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+#profile-settings .flex-column li:last-child a {
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+
+#profile-settings .flex-column li:last-child {
+    border-bottom: 0;
+}
+
+.progress-bar-animated {
+    animation: w70 1s ease forwards,
+    progress-bar-stripes 2s linear infinite;
+}
+
 ul#feed .feed-post {
     width: 80%;
     display: inline-block;
@@ -161,80 +205,81 @@ ul#feed .feed-post h5 > small {
     font-size: 1.2rem;
 }
 
-ul#feed .action-list{
+ul#feed .action-list {
     margin-left: 13%;
     padding-left: 1em;
 }
 
-ul#feed .action-list a{
+ul#feed .action-list a {
     width: 15%;
     display: inline-block;
 }
 
-ul#feed .action-list a:hover{
+ul#feed .action-list a:hover {
     text-decoration: none;
 }
 
-ul#feed li{
+ul#feed li {
     padding: 1em 1em;
     border-bottom: 0.1rem solid #e5e5e5;
 }
 
-#main #breadCrumb ol{
+#main #breadCrumb ol {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
 }
 
-div#who-follow li{
+div#who-follow li {
     margin-bottom: 2em;
 }
 
-div#who-follow li:last-child{
+div#who-follow li:last-child {
     margin-bottom: 0;
 }
 
-div#who-follow li img{
+div#who-follow li img {
     width: 26%;
     display: inline-block;
     vertical-align: top;
     margin-right: 2%;
 }
 
-div#who-follow li .table-info{
+div#who-follow li .table-info {
     width: 68%;
     display: inline-block;
     background-color: #ffffff;
 }
 
-.alert{
+.alert {
     border-left-width: 0.5rem;
 }
-.alert h3{
+
+.alert h3 {
     margin: 0 0 1rem;
     font-size: 1.4em;
 }
 
-div#who-follow li .table-info strong{
+div#who-follow li .table-info strong {
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-div#app-info{
+div#app-info {
     margin-top: 2rem;
 }
 
-div#who-follow .table-info .fa{
+div#who-follow .table-info .fa {
     color: #2F92CA;
 }
 
-ul#feed li:last-child{
+ul#feed li:last-child {
     border-bottom: none;
 }
 
-ul#feed .action-list .retweet-count{
+ul#feed .action-list .retweet-count {
     padding-left: 0.2em;
     font-weight: bold;
 }
@@ -254,6 +299,36 @@ nav form#search .input-group .form-control {
 
 #nav-options #headDropDown::after {
     display: none !important;
+}
+
+#account-tabs > li{
+    border-bottom: 0.1rem solid #e5e5e5;
+}
+
+#account-tabs a{
+    border-bottom: 0;
+}
+
+#account-tabs #first{
+    border-bottom: 0;
+}
+
+#main .tab-content{
+    padding: 2em;
+    margin-top: -0.1rem;
+}
+
+#account-tabs{
+    position: relative;
+    z-index: 99;
+}
+
+.container-fluid > .row{
+    color: #333;
+}
+
+#main .form-horizontal{
+    margin-bottom: 0;
 }
 
 #tweet {
