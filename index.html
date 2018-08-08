@@ -102,7 +102,8 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <button id="tweet" class="btn btn-light d-none d-md-block">
+                    <button id="tweet" class="btn btn-light d-none d-lg-block"
+                            data-toggle="modal" data-target="#tweet-modal">
                         <span class="fa fa-pencil-alt" aria-hidden="true">
                             Tweet
                         </span>
@@ -299,6 +300,34 @@
     </div>
 </div>
 
+<div class="modal fade" id="tweet-modal" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Dog a new tweet</h4>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <textarea rows="4" maxlength="140" placeholder="What you want to bark?" class="form-control"></textarea>
+            </div>
+            <div class="modal-footer">
+                <span class="char-count mr-auto" data-max="140">140</span>
+                <button type="button" class="btn btn-light"
+                        data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Tweet
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -310,5 +339,6 @@
 <script src="js/bootstrap.min.js"
         integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

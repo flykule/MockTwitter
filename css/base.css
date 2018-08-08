@@ -332,6 +332,10 @@ nav form#search .input-group .form-control {
     border-bottom: 0;
 }
 
+#tweet-modal .char-count{
+    padding: 0.7rem 0;
+}
+
 #right-content .list-group .badge{
     float: right;
     /*padding: 0.3rem 0.6rem;*/
