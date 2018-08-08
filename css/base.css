@@ -332,6 +332,10 @@ nav form#search .input-group .form-control {
     border-bottom: 0;
 }
 
+div#who-follow li .table-info .fa-check{
+    color:#5cb85c;
+}
+
 #tweet-modal .char-count{
     padding: 0.7rem 0;
 }
