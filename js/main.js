@@ -12,10 +12,11 @@ $(document).ready(function () {
 
     $('[data-toggle="tooltip"]').tooltip({animation: true});
     let popoverContentTemplate = '' +
-        '<img src="imgs/breed.jpg" class="rounded-circle">' +
-        '<div class="info">' +
-        '<strong>Dog Breeds</strong>' +
-        '<a href="#" class="btn btn-default">' +
+        '<img src="imgs/breed.jpg" class="rounded-circle" style="vertical-align: top;width: 27%;' +
+        'display: inline-block;margin-right: 5%;margin-top: 5%;">' +
+        '<div class="table-info" style="background-color: #ffffff;width: 67%;display: inline-block;">' +
+        '<strong style="display: block;overflow: hidden;text-overflow: ellipsis;">Dog Breeds</strong>' +
+        '<a href="#" class="btn btn-light">' +
         '<i class="fa fa-plus" aria-hidden="true"></i>' + 'Follow' + '</a>' + '</div>';
 
     let popovers = $('[data-toggle="popover"]');

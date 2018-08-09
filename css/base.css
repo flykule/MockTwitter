@@ -77,8 +77,19 @@ nav form#search {
     z-index: 99;
 }
 
+/*#profile-resume .card-body > h5{*/
+    /*font-size: 18px;*/
+/*}*/
+
+#profile-resume .card-body .card-text{
+    font-size: 14px;
+}
+
+#profile-resume .card-body .row .col-sm{
+    font-size: 14px;
+}
+
 .card-body .card-title {
-    float: left;
     margin: -1rem 0 0 0.5rem;
 }
 
@@ -177,12 +188,14 @@ ul#feed .feed-avatar {
     border-radius: 0.4rem 0.4rem 0 0;
 }
 
-body{
-    background-color: #f5f5f5!important;
+body {
+    background-color: #f5f5f5 !important;
 }
-.card{
+
+.card {
     margin-top: 0.5rem;
 }
+
 #profile-settings .flex-column li:last-child a {
     border-radius: 0 0 0.4rem 0.4rem;
 }
@@ -235,6 +248,24 @@ ul#feed li {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
+}
+
+
+@media (min-width: 768px) {
+    .bd-sidebar {
+        /*border-right: 1px solid rgba(0, 0, 0, .1);*/
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5rem;
+        z-index: 1000;
+        height: calc(100vh - 4rem);
+    }
+}
+
+.bd-sidebar {
+    -ms-flex-order: 0;
+    order: 0;
+    /*border-bottom: 1px solid rgba(0, 0, 0, .1);*/
 }
 
 div#who-follow li {
@@ -307,57 +338,58 @@ nav form#search .input-group .form-control {
     display: none !important;
 }
 
-#account-tabs > li{
+#account-tabs > li {
     border-bottom: 0.1rem solid #e5e5e5;
 }
 
-#account-tabs a{
+#account-tabs a {
     border-bottom: 0;
 }
 
-#account-tabs #first{
+#account-tabs #first {
     border-bottom: 0;
 }
 
-#main .tab-content{
+#main .tab-content {
     padding: 2em;
     margin-top: -0.1rem;
-    background-color: #FFFFFF!important;
+    background-color: #FFFFFF !important;
 }
-.list-group-item{
+
+.list-group-item {
     border-color: #e5e5e5;
 }
 
-#account-tabs > li{
+#account-tabs > li {
     border-bottom: 0;
 }
 
-div#who-follow li .table-info .fa-check{
-    color:#5cb85c;
+div#who-follow li .table-info .fa-check {
+    color: #5cb85c;
 }
 
-#tweet-modal .char-count{
+#tweet-modal .char-count {
     padding: 0.7rem 0;
 }
 
-#right-content .list-group .badge{
+#right-content .list-group .badge {
     float: right;
     /*padding: 0.3rem 0.6rem;*/
 }
 
-#right-content .list-group .fa-star{
+#right-content .list-group .fa-star {
 }
 
-#account-tabs{
+#account-tabs {
     position: relative;
     z-index: 99;
 }
 
-.container-fluid > .row{
+.container-fluid > .row {
     color: #333;
 }
 
-#main .form-horizontal{
+#main .form-horizontal {
     margin-bottom: 0;
 }
 

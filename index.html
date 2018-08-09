@@ -18,17 +18,11 @@
     <title>Mock Twitter</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-light navbar-expand-lg">
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="index.html">
             <img src="imgs/logo.png" width="128" height="128" class="img-fluid">
             <!--Logo-->
         </a>
-        <button class="btn btn-light ml-auto d-none d-xl-block">
-            <span class="fa fa-pencil-alt" aria-hidden="true">
-                Tweet
-            </span>
-        </button>
         <button class="navbar-toggler" type="button"
                 data-toggle="collapse" data-target="#nav-menu"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -112,22 +106,20 @@
             </ul>
         </div>
     </nav>
-</header>
 
 <div class="container-fluid">
     <div class="row" id="mainRow">
-        <div id="profile" class="col-lg-3 d-none d-lg-block">
-            <div id="profile-resume" class="card"
-            >
+        <div id="profile" class="col-lg-3 d-none d-lg-block bd-sidebar">
+            <div id="profile-resume" class="card w-75" style="margin-left: 3.5rem">
                 <img class="card-img-top img-fluid"
                      src="imgs/landscape.jpg">
                 <div class="card-body">
                     <img src="imgs/jon.png" class="card-img">
-                    <h4 class="card-title">
-                        Jonny Doo
-                        <small>@jonnydoo</small>
-                    </h4>
-                    <p class="card-text">Dog goes woofy. Did you said quity?</p>
+                    <h5 class="card-title">
+                        Jonny Doo<small
+                        >@jonnydoo</small>
+                    </h5>
+                    <p class="card-text">Dog goes woofy. Did you said squirrel?</p>
                     <div class="row justify-content-start">
                         <div class="col-sm text-center">
                             <span class="profile-stats">Tweets</span>
@@ -145,28 +137,28 @@
                 </div>
             </div>
 
-            <div id="profile-photo" class="card"
+            <div id="profile-photo" class="card w-75" style="margin-left: 3.5rem"
             >
-                <div class="card-header text-center">Photos</div>
+                <div class="card-header text-left" style="font-size: 14px;">Photos</div>
                 <div class="card-body">
                     <div class="justify-content-center row">
-                        <div class="col-lg-6 mb-2 col-12" style="padding: 0;">
-                            <a href="#" class="d-block">
+                        <div class="col-lg-6 mb-1 col-13" style="padding: 0">
+                            <a href="#" class="d-block" style="margin: 3px">
                                 <img class="img-thumbnail img-fluid"
                                      src="imgs/landscape-02.jpg"></a>
                         </div>
-                        <div class="col-lg-6 mb-2 col-12" style="padding: 0;">
-                            <a href="#" class="d-block">
+                        <div class="col-lg-6 mb-1 col-12" style="padding: 0;">
+                            <a href="#" class="d-block" style="margin: 3px">
                                 <img class="img-fluid img-thumbnail"
                                      src="imgs/landscape-03.jpg"></a>
                         </div>
-                        <div class="col-lg-6 mb-2 col-12" style="padding: 0;">
-                            <a href="#" class="d-block">
+                        <div class="col-lg-6 col-12" style="padding: 0;">
+                            <a href="#" class="d-block" style="margin: 3px">
                                 <img class="img-thumbnail img-fluid"
                                      src="imgs/landscape-04.jpg"></a>
                         </div>
-                        <div class="col-lg-6 mb-2 col-12" style="padding: 0;">
-                            <a href="#" class="d-block">
+                        <div class="col-lg-6 mb-1 col-12" style="padding: 0;">
+                            <a href="#" class="d-block" style="margin: 3px">
                                 <img class="img-fluid img-thumbnail"
                                      src="imgs/landscape-05.jpg"></a>
                         </div>
@@ -189,6 +181,186 @@
                     </div>
                 </form>
                 <ul id="feed" class="list-unstyled">
+                    <li>
+                        <img src="imgs/doge.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Name
+                                <small>@namex - 3h</small>
+                            </h5>
+                            <p> You can't hold a dog down without staying down with
+                                him!</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">6</span>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/laika.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Laika
+                                <small>@spacesog - 4h</small>
+                            </h5>
+                            <p>That's one small step for a dog, one giant leap for giant</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">4</span>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/doge.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Name
+                                <small>@namex - 3h</small>
+                            </h5>
+                            <p> You can't hold a dog down without staying down with
+                                him!</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">6</span>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/laika.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Laika
+                                <small>@spacesog - 4h</small>
+                            </h5>
+                            <p>That's one small step for a dog, one giant leap for giant</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">4</span>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/doge.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Name
+                                <small>@namex - 3h</small>
+                            </h5>
+                            <p> You can't hold a dog down without staying down with
+                                him!</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">6</span>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/laika.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Laika
+                                <small>@spacesog - 4h</small>
+                            </h5>
+                            <p>That's one small step for a dog, one giant leap for giant</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">4</span>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/doge.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Name
+                                <small>@namex - 3h</small>
+                            </h5>
+                            <p> You can't hold a dog down without staying down with
+                                him!</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">6</span>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imgs/laika.jpg" class="feed-avatar rounded-circle">
+                        <div class="feed-post">
+                            <h5>Laika
+                                <small>@spacesog - 4h</small>
+                            </h5>
+                            <p>That's one small step for a dog, one giant leap for giant</p>
+                        </div>
+                        <div class="action-list">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reply">
+                                <i class="fa fa-share" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Retweet">
+                                <i class="fa fa-sync-alt" aria-hidden="true"></i>
+                                <span class="retweet-count">4</span>
+                            </a>
+
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
                     <li>
                         <img src="imgs/doge.jpg" class="feed-avatar rounded-circle">
                         <div class="feed-post">
